@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    background-image: url('assets/img/bg.png');
+    background-color: black;
+    width: 1280px;
+    height: 800px;
+    background-size: contain;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 50px;
+    /* padding: 10px;
+    background-color: #5271ff; */
+}
+
+.navbar a {
+    padding: 30px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline #5271ff 2px;
+}
+
+#home:hover,
+#discover:hover,
+#chat:hover,
+#about:hover {
+    font-size: 25px;
+}
+
+img {
+    position: fixed;
+    padding: 15px;
+    top: 0px;
+    right: 0px;
+    max-width: 120px;
+    height: auto;
+    opacity: .85;
+}
+
+img:hover {
+    max-width: 140px;
+    opacity: 1;
+}
+
+.start a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.start a:hover {
+    color: white;
+}
+
+.start {
+    position: fixed;
+    padding: 10px;
+    bottom: 35px;
+    left: 140px;
+    background-color: #5271ff;
+    width: fit-content;
+}
+
+.start:hover {
+    background-color: #03c0e9;
+}
+
+.typewriter {
+    display: inline;
+    color: white;
+    font-size: 4.8em;
+    position: absolute;
+    top: 4.25em;
+    left: 9em;
+    font-weight: bolder;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.text {
+    width: 9.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
